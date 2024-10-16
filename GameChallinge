@@ -1,0 +1,178 @@
+local CorruptingsystemLOL = Instance.new("ScreenGui")
+local BackGround = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Intro = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local System = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+CorruptingsystemLOL.Name = "Corrupting system LOL"
+CorruptingsystemLOL.Parent = game.CoreGui
+
+BackGround.Name = "BackGround"
+BackGround.Parent = CorruptingsystemLOL
+BackGround.BackgroundColor3 = Color3.fromRGB(95, 95, 95)
+BackGround.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BackGround.BorderSizePixel = 0
+BackGround.Position = UDim2.new(0, -1, 0, 3)
+BackGround.Size = UDim2.new(0, 451, 0, 377)
+
+UICorner.Parent = BackGround
+
+Intro.Name = "Intro"
+Intro.Parent = BackGround
+Intro.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Intro.BackgroundTransparency = 1.000
+Intro.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Intro.BorderSizePixel = 0
+Intro.Size = UDim2.new(0, 451, 0, 377)
+Intro.Visible = false
+
+TextLabel.Parent = Intro
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.157427937, 0, 0.0238726791, 0)
+TextLabel.Size = UDim2.new(0, 312, 0, 312)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Joey scripts"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+System.Name = "System"
+System.Parent = BackGround
+System.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+System.BackgroundTransparency = 1.000
+System.BorderColor3 = Color3.fromRGB(0, 0, 0)
+System.BorderSizePixel = 0
+System.Size = UDim2.new(0, 451, 0, 377)
+System.Visible = false
+
+TextLabel_2.Parent = System
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.157427937, 0, 0.0238726791, 0)
+TextLabel_2.Size = UDim2.new(0, 312, 0, 312)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "Corrupting now started! Have fun!"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextStrokeTransparency = 0.000
+TextLabel_2.TextWrapped = true
+
+-- Scripts:
+
+local function OCZLAP_fake_script() -- BackGround.FrameVisibilityController 
+	local script = Instance.new('LocalScript', BackGround)
+
+	local frame = script.Parent
+	local introFrame = frame:FindFirstChild("Intro")
+	local systemFrame = frame:FindFirstChild("System")
+	
+	if introFrame then
+	    introFrame.Visible = true
+	    wait(10)
+	    introFrame.Visible = false
+	end
+	
+	if systemFrame then
+	    systemFrame.Visible = true
+	    wait(5)
+	    frame.Visible = false
+	end
+	
+	
+end
+coroutine.wrap(OCZLAP_fake_script)()
+local function VDVWH_fake_script() -- BackGround.RandomEvents 
+	local script = Instance.new('LocalScript', BackGround)
+
+	local function changePartColor()
+	    local parts = game.Workspace:GetDescendants()
+	    for _, part in parts do
+	        if part:IsA("BasePart") then
+	            part.BrickColor = BrickColor.random()
+	        end
+	    end
+	end
+	
+	local function changeAnchoredProperty()
+	    local parts = game.Workspace:GetDescendants()
+	    for _, part in parts do
+	        if part:IsA("BasePart") then
+	            part.Anchored = not part.Anchored
+	        end
+	    end
+	end
+	
+	local function changePlaybackSpeed()
+	    local sounds = game.Workspace:GetDescendants()
+	    for _, sound in sounds do
+	        if sound:IsA("Sound") then
+	            sound.PlaybackSpeed = math.random(50, 150) / 100
+	        end
+	    end
+	end
+	
+	local function changeTimeOfDay()
+	    game.Lighting.ClockTime = math.random(0, 24)
+	end
+	
+	local function changePartSizeAndPosition()
+	    local parts = game.Workspace:GetDescendants()
+	    for _, part in parts do
+	        if part:IsA("BasePart") then
+	            part.Size = part.Size * Vector3.new(math.random(), math.random(), math.random())
+	            part.Position = part.Position + Vector3.new(math.random(-10, 10), math.random(-10, 10), math.random(-10, 10))
+	        end
+	    end
+	end
+	
+	local function playRandomSound()
+	    local sounds = game.Workspace:GetDescendants()
+	    for _, sound in sounds do
+	        if sound:IsA("Sound") then
+	            sound:Play()
+	            sound.Pitch = math.random(50, 150) / 100
+	        end
+	    end
+	end
+	
+	local function killRandomPlayer()
+	    local players = game.Players:GetPlayers()
+	    if #players > 0 then
+	        local player = players[math.random(1, #players)]
+	        if player.Character and player.Character:FindFirstChild("Humanoid") then
+	            player.Character.Humanoid.Health = 0
+	        end
+	    end
+	end
+	
+	local events = {
+	    changePartColor,
+	    changeAnchoredProperty,
+	    changePlaybackSpeed,
+	    changeTimeOfDay,
+	    changePartSizeAndPosition,
+	    playRandomSound,
+	    killRandomPlayer
+	}
+	
+	while true do
+	    local event = events[math.random(1, #events)]
+	    event()
+	    wait(math.random(0, 60))
+	end
+	
+	
+end
+coroutine.wrap(VDVWH_fake_script)()
