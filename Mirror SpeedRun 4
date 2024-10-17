@@ -1,0 +1,644 @@
+local RGE = Instance.new("ScreenGui")
+local BackGround = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ScrollingFrame1 = Instance.new("ScrollingFrame")
+local PSB = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local GSB = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local ScrollingFrame2 = Instance.new("ScrollingFrame")
+local CM = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local WalkSpeedChanceFrame = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Sayswhatitmeans = Instance.new("TextLabel")
+local SpeedChancer = Instance.new("TextBox")
+local JumppowerChanceFrame = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Sayswhatitmeans_2 = Instance.new("TextLabel")
+local JumppowerChancer = Instance.new("TextBox")
+local NB = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local DB = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local SOB = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local ScrollingFrame3 = Instance.new("ScrollingFrame")
+local CM_2 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local AF = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local CF = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local SL = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+
+--Properties:
+
+RGE.Name = "RG//E"
+RGE.Parent = game.CoreGui
+RGE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+BackGround.Name = "BackGround"
+BackGround.Parent = RGE
+BackGround.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+BackGround.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BackGround.BorderSizePixel = 0
+BackGround.Position = UDim2.new(0.0509554148, 0, 0.146103889, 0)
+BackGround.Size = UDim2.new(0, 377, 0, 290)
+
+UICorner.Parent = BackGround
+
+ScrollingFrame1.Name = "ScrollingFrame1"
+ScrollingFrame1.Parent = BackGround
+ScrollingFrame1.Active = true
+ScrollingFrame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame1.BackgroundTransparency = 1.000
+ScrollingFrame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame1.BorderSizePixel = 0
+ScrollingFrame1.Size = UDim2.new(0, 377, 0, 290)
+ScrollingFrame1.Visible = false
+
+PSB.Name = "PSB"
+PSB.Parent = ScrollingFrame1
+PSB.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+PSB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PSB.BorderSizePixel = 0
+PSB.Position = UDim2.new(0.0265251994, 0, 0.0206896551, 0)
+PSB.Size = UDim2.new(0, 127, 0, 127)
+PSB.Font = Enum.Font.SourceSans
+PSB.Text = "Player Settings"
+PSB.TextColor3 = Color3.fromRGB(255, 255, 255)
+PSB.TextScaled = true
+PSB.TextSize = 14.000
+PSB.TextWrapped = true
+
+UICorner_2.Parent = PSB
+
+GSB.Name = "GSB"
+GSB.Parent = ScrollingFrame1
+GSB.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+GSB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GSB.BorderSizePixel = 0
+GSB.Position = UDim2.new(0.567639232, 0, 0.0206896551, 0)
+GSB.Size = UDim2.new(0, 127, 0, 127)
+GSB.Font = Enum.Font.SourceSans
+GSB.Text = "Game Stuff"
+GSB.TextColor3 = Color3.fromRGB(255, 255, 255)
+GSB.TextScaled = true
+GSB.TextSize = 14.000
+GSB.TextWrapped = true
+
+UICorner_3.Parent = GSB
+
+ScrollingFrame2.Name = "ScrollingFrame2"
+ScrollingFrame2.Parent = BackGround
+ScrollingFrame2.Active = true
+ScrollingFrame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame2.BackgroundTransparency = 1.000
+ScrollingFrame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame2.BorderSizePixel = 0
+ScrollingFrame2.Size = UDim2.new(0, 377, 0, 290)
+ScrollingFrame2.Visible = false
+
+CM.Name = "CM"
+CM.Parent = ScrollingFrame2
+CM.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+CM.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CM.BorderSizePixel = 0
+CM.Position = UDim2.new(0.795755982, 0, 0.0241379309, 0)
+CM.Size = UDim2.new(0, 55, 0, 32)
+CM.Font = Enum.Font.SourceSans
+CM.Text = "CloseMenu"
+CM.TextColor3 = Color3.fromRGB(255, 255, 255)
+CM.TextScaled = true
+CM.TextSize = 14.000
+CM.TextWrapped = true
+
+UICorner_4.Parent = CM
+
+WalkSpeedChanceFrame.Name = "WalkSpeedChanceFrame"
+WalkSpeedChanceFrame.Parent = ScrollingFrame2
+WalkSpeedChanceFrame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+WalkSpeedChanceFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeedChanceFrame.BorderSizePixel = 0
+WalkSpeedChanceFrame.Position = UDim2.new(0.114058353, 0, 0.0965517238, 0)
+WalkSpeedChanceFrame.Size = UDim2.new(0, 268, 0, 77)
+
+UICorner_5.Parent = WalkSpeedChanceFrame
+
+Sayswhatitmeans.Name = "Says what it means"
+Sayswhatitmeans.Parent = WalkSpeedChanceFrame
+Sayswhatitmeans.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sayswhatitmeans.BackgroundTransparency = 1.000
+Sayswhatitmeans.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sayswhatitmeans.BorderSizePixel = 0
+Sayswhatitmeans.Position = UDim2.new(0.104477614, 0, -0.649350643, 0)
+Sayswhatitmeans.Size = UDim2.new(0, 200, 0, 50)
+Sayswhatitmeans.Font = Enum.Font.SourceSans
+Sayswhatitmeans.Text = "Chance your walkspeed here!"
+Sayswhatitmeans.TextColor3 = Color3.fromRGB(143, 143, 143)
+Sayswhatitmeans.TextScaled = true
+Sayswhatitmeans.TextSize = 14.000
+Sayswhatitmeans.TextWrapped = true
+
+SpeedChancer.Name = "SpeedChancer"
+SpeedChancer.Parent = WalkSpeedChanceFrame
+SpeedChancer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedChancer.BackgroundTransparency = 1.000
+SpeedChancer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpeedChancer.BorderSizePixel = 0
+SpeedChancer.Size = UDim2.new(0, 268, 0, 77)
+SpeedChancer.Font = Enum.Font.SourceSans
+SpeedChancer.Text = "16"
+SpeedChancer.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedChancer.TextScaled = true
+SpeedChancer.TextSize = 14.000
+SpeedChancer.TextWrapped = true
+
+JumppowerChanceFrame.Name = "JumppowerChanceFrame"
+JumppowerChanceFrame.Parent = ScrollingFrame2
+JumppowerChanceFrame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+JumppowerChanceFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumppowerChanceFrame.BorderSizePixel = 0
+JumppowerChanceFrame.Position = UDim2.new(0.114058353, 0, 0.341379315, 0)
+JumppowerChanceFrame.Size = UDim2.new(0, 268, 0, 77)
+
+UICorner_6.Parent = JumppowerChanceFrame
+
+Sayswhatitmeans_2.Name = "Says what it means"
+Sayswhatitmeans_2.Parent = JumppowerChanceFrame
+Sayswhatitmeans_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sayswhatitmeans_2.BackgroundTransparency = 1.000
+Sayswhatitmeans_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sayswhatitmeans_2.BorderSizePixel = 0
+Sayswhatitmeans_2.Position = UDim2.new(0.104477614, 0, -0.649350643, 0)
+Sayswhatitmeans_2.Size = UDim2.new(0, 200, 0, 50)
+Sayswhatitmeans_2.Font = Enum.Font.SourceSans
+Sayswhatitmeans_2.Text = "Chance your JumpPower here!"
+Sayswhatitmeans_2.TextColor3 = Color3.fromRGB(143, 143, 143)
+Sayswhatitmeans_2.TextScaled = true
+Sayswhatitmeans_2.TextSize = 14.000
+Sayswhatitmeans_2.TextWrapped = true
+
+JumppowerChancer.Name = "JumppowerChancer"
+JumppowerChancer.Parent = JumppowerChanceFrame
+JumppowerChancer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumppowerChancer.BackgroundTransparency = 1.000
+JumppowerChancer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumppowerChancer.BorderSizePixel = 0
+JumppowerChancer.Size = UDim2.new(0, 268, 0, 77)
+JumppowerChancer.Font = Enum.Font.SourceSans
+JumppowerChancer.Text = "15"
+JumppowerChancer.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumppowerChancer.TextScaled = true
+JumppowerChancer.TextSize = 14.000
+JumppowerChancer.TextWrapped = true
+
+NB.Name = "NB"
+NB.Parent = ScrollingFrame2
+NB.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+NB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NB.BorderSizePixel = 0
+NB.Position = UDim2.new(0.0503978767, 0, 0.524137735, 0)
+NB.Size = UDim2.new(0, 110, 0, 34)
+NB.Font = Enum.Font.SourceSans
+NB.Text = "NightTime"
+NB.TextColor3 = Color3.fromRGB(255, 255, 255)
+NB.TextScaled = true
+NB.TextSize = 14.000
+NB.TextWrapped = true
+
+UICorner_7.Parent = NB
+
+DB.Name = "DB"
+DB.Parent = ScrollingFrame2
+DB.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+DB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DB.BorderSizePixel = 0
+DB.Position = UDim2.new(0.0503978767, 0, 0.61034441, 0)
+DB.Size = UDim2.new(0, 110, 0, 34)
+DB.Font = Enum.Font.SourceSans
+DB.Text = "DayTime"
+DB.TextColor3 = Color3.fromRGB(255, 255, 255)
+DB.TextScaled = true
+DB.TextSize = 14.000
+DB.TextWrapped = true
+
+UICorner_8.Parent = DB
+
+SOB.Name = "SOB"
+SOB.Parent = ScrollingFrame2
+SOB.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+SOB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SOB.BorderSizePixel = 0
+SOB.Position = UDim2.new(0.427055717, 0, 0.558619857, 0)
+SOB.Size = UDim2.new(0, 110, 0, 34)
+SOB.Font = Enum.Font.SourceSans
+SOB.Text = "Shadows Off"
+SOB.TextColor3 = Color3.fromRGB(255, 255, 255)
+SOB.TextScaled = true
+SOB.TextSize = 14.000
+SOB.TextWrapped = true
+
+UICorner_9.Parent = SOB
+
+ScrollingFrame3.Name = "ScrollingFrame3"
+ScrollingFrame3.Parent = BackGround
+ScrollingFrame3.Active = true
+ScrollingFrame3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame3.BackgroundTransparency = 1.000
+ScrollingFrame3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame3.BorderSizePixel = 0
+ScrollingFrame3.Size = UDim2.new(0, 377, 0, 290)
+
+CM_2.Name = "CM"
+CM_2.Parent = ScrollingFrame3
+CM_2.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+CM_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CM_2.BorderSizePixel = 0
+CM_2.Position = UDim2.new(0.795755982, 0, 0.0241379309, 0)
+CM_2.Size = UDim2.new(0, 55, 0, 32)
+CM_2.Font = Enum.Font.SourceSans
+CM_2.Text = "CloseMenu"
+CM_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+CM_2.TextScaled = true
+CM_2.TextSize = 14.000
+CM_2.TextWrapped = true
+
+UICorner_10.Parent = CM_2
+
+AF.Name = "AF"
+AF.Parent = ScrollingFrame3
+AF.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+AF.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AF.BorderSizePixel = 0
+AF.Position = UDim2.new(0.0583554395, 0, 0.100013681, 0)
+AF.Size = UDim2.new(0, 78, 0, 67)
+AF.Font = Enum.Font.SourceSans
+AF.Text = "Auto Finish"
+AF.TextColor3 = Color3.fromRGB(255, 255, 255)
+AF.TextScaled = true
+AF.TextSize = 14.000
+AF.TextWrapped = true
+
+UICorner_11.Parent = AF
+
+CF.Name = "CF"
+CF.Parent = ScrollingFrame3
+CF.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+CF.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CF.BorderSizePixel = 0
+CF.Position = UDim2.new(0.310344815, 0, 0.10002736, 0)
+CF.Size = UDim2.new(0, 78, 0, 67)
+CF.Font = Enum.Font.SourceSans
+CF.Text = "ColorFul"
+CF.TextColor3 = Color3.fromRGB(255, 255, 255)
+CF.TextScaled = true
+CF.TextSize = 14.000
+CF.TextWrapped = true
+
+UICorner_12.Parent = CF
+
+SL.Name = "SL"
+SL.Parent = ScrollingFrame3
+SL.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+SL.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SL.BorderSizePixel = 0
+SL.Position = UDim2.new(0.567639232, 0, 0.100054719, 0)
+SL.Size = UDim2.new(0, 78, 0, 67)
+SL.Font = Enum.Font.SourceSans
+SL.Text = "Skip Level"
+SL.TextColor3 = Color3.fromRGB(255, 255, 255)
+SL.TextScaled = true
+SL.TextSize = 14.000
+SL.TextWrapped = true
+
+UICorner_13.Parent = SL
+
+-- Scripts:
+
+local function ITCPG_fake_script() -- PSB.ToggleScrollingFrames 
+	local script = Instance.new('LocalScript', PSB)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	    local parent = button.Parent
+	    while parent and parent.Name ~= "BackGround" do
+	        parent = parent.Parent
+	    end
+	
+	    if parent and parent.Name == "BackGround" then
+	        local scrollingFrame1 = parent:FindFirstChild("ScrollingFrame1")
+	        local scrollingFrame2 = parent:FindFirstChild("ScrollingFrame2")
+	
+	        if scrollingFrame1 then
+	            scrollingFrame1.Visible = false
+	        end
+	
+	        if scrollingFrame2 then
+	            scrollingFrame2.Visible = true
+	        end
+	    end
+	end)
+	
+	
+end
+coroutine.wrap(ITCPG_fake_script)()
+local function HMYWPTR_fake_script() -- GSB.ToggleScrollingFrames 
+	local script = Instance.new('LocalScript', GSB)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	    local parent = button.Parent
+	    while parent and parent.Name ~= "BackGround" do
+	        parent = parent.Parent
+	    end
+	
+	    if parent and parent.Name == "BackGround" then
+	        local scrollingFrame1 = parent:FindFirstChild("ScrollingFrame1")
+	        local scrollingFrame2 = parent:FindFirstChild("ScrollingFrame3")
+	
+	        if scrollingFrame1 then
+	            scrollingFrame1.Visible = false
+	        end
+	
+	        if scrollingFrame2 then
+	            scrollingFrame2.Visible = true
+	        end
+	    end
+	end)
+	
+	
+end
+coroutine.wrap(HMYWPTR_fake_script)()
+local function MMYEFIG_fake_script() -- CM.ToggleScrollingFrames 
+	local script = Instance.new('LocalScript', CM)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	    local parent = button.Parent
+	    while parent and parent.Name ~= "BackGround" do
+	        parent = parent.Parent
+	    end
+	
+	    if parent and parent.Name == "BackGround" then
+	        local scrollingFrame1 = parent:FindFirstChild("ScrollingFrame1")
+	        local scrollingFrame2 = parent:FindFirstChild("ScrollingFrame2")
+	
+	        if scrollingFrame1 then
+	            scrollingFrame1.Visible = true
+	        end
+	
+	        if scrollingFrame2 then
+	            scrollingFrame2.Visible = false
+	        end
+	    end
+	end)
+	
+	
+end
+coroutine.wrap(MMYEFIG_fake_script)()
+local function YPRQHK_fake_script() -- SpeedChancer.SpeedChangerClient 
+	local script = Instance.new('LocalScript', SpeedChancer)
+
+	local textBox = script.Parent
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+	    if enterPressed then
+	        local input = tonumber(textBox.Text)
+	        if input then
+	            local player = game.Players.LocalPlayer
+	            local character = player.Character or player.CharacterAdded:Wait()
+	            local humanoid = character:FindFirstChildOfClass("Humanoid")
+	            if humanoid then
+	                humanoid.WalkSpeed = input
+	            end
+	        end
+	    end
+	end)
+	
+	
+end
+coroutine.wrap(YPRQHK_fake_script)()
+local function UFZWWH_fake_script() -- JumppowerChancer.JumpPowerChangerClient 
+	local script = Instance.new('LocalScript', JumppowerChancer)
+
+	local textBox = script.Parent
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+	    if enterPressed then
+	        local input = tonumber(textBox.Text)
+	        if input then
+	            local player = game.Players.LocalPlayer
+	            local character = player.Character or player.CharacterAdded:Wait()
+	            local humanoid = character:FindFirstChildOfClass("Humanoid")
+	            if humanoid then
+	                humanoid.JumpPower = input
+	            end
+	        end
+	    end
+	end)
+	
+	
+end
+coroutine.wrap(UFZWWH_fake_script)()
+local function QXPIARW_fake_script() -- NB.NightButtonClient 
+	local script = Instance.new('LocalScript', NB)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	    game.Lighting.TimeOfDay = "00:00:00"
+	end)
+	
+	
+end
+coroutine.wrap(QXPIARW_fake_script)()
+local function YICDC_fake_script() -- DB.DayButtonClient 
+	local script = Instance.new('LocalScript', DB)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		game.Lighting.TimeOfDay = "12:00:00"
+	end)
+	
+	
+	
+end
+coroutine.wrap(YICDC_fake_script)()
+local function GZQLJK_fake_script() -- SOB.DisableShadowsButtonClient 
+	local script = Instance.new('LocalScript', SOB)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	    game.Lighting.GlobalShadows = false
+	end)
+	
+	
+end
+coroutine.wrap(GZQLJK_fake_script)()
+local function KXJTU_fake_script() -- BackGround.DraggableFrame 
+	local script = Instance.new('LocalScript', BackGround)
+
+	local frame = script.Parent
+	local dragging = false
+	local dragInput, mousePos, framePos
+	
+	local function update(input)
+	    local delta = input.Position - mousePos
+	    frame.Position = UDim2.new(
+	        framePos.X.Scale,
+	        framePos.X.Offset + delta.X,
+	        framePos.Y.Scale,
+	        framePos.Y.Offset + delta.Y
+	    )
+	end
+	
+	frame.InputBegan:Connect(function(input)
+	    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+	        dragging = true
+	        mousePos = input.Position
+	        framePos = frame.Position
+	
+	        input.Changed:Connect(function()
+	            if input.UserInputState == Enum.UserInputState.End then
+	                dragging = false
+	            end
+	        end)
+	    end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+	    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	        dragInput = input
+	    end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+	    if dragging and input == dragInput then
+	        update(input)
+	    end
+	end)
+	
+	
+end
+coroutine.wrap(KXJTU_fake_script)()
+local function FSTDMTQ_fake_script() -- CM_2.ToggleScrollingFrames 
+	local script = Instance.new('LocalScript', CM_2)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	    local parent = button.Parent
+	    while parent and parent.Name ~= "BackGround" do
+	        parent = parent.Parent
+	    end
+	
+	    if parent and parent.Name == "BackGround" then
+	        local scrollingFrame1 = parent:FindFirstChild("ScrollingFrame1")
+	        local scrollingFrame2 = parent:FindFirstChild("ScrollingFrame3")
+	
+	        if scrollingFrame1 then
+	            scrollingFrame1.Visible = true
+	        end
+	
+	        if scrollingFrame2 then
+	            scrollingFrame2.Visible = false
+	        end
+	    end
+	end)
+	
+	
+end
+coroutine.wrap(FSTDMTQ_fake_script)()
+local function JVHSFIJ_fake_script() -- AF.TeleportPlayerToSpawnPoints 
+	local script = Instance.new('LocalScript', AF)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	button.MouseButton1Click:Connect(function()
+	    local spawnIndex = 0
+	    local maxSpawnIndex = 31
+	
+	    local function teleportToSpawnPoint(index)
+	        local spawnPoint = game.Workspace:FindFirstChild(tostring(index))
+	        if spawnPoint then
+	            player.Character:SetPrimaryPartCFrame(spawnPoint.CFrame)
+	        end
+	    end
+	
+	    local function teleportLoop()
+	        while spawnIndex <= maxSpawnIndex do
+	            teleportToSpawnPoint(spawnIndex)
+	            spawnIndex = spawnIndex + 1
+	            task.wait(1)
+	        end
+	    end
+	
+	    teleportLoop()
+	end)
+	
+	
+end
+coroutine.wrap(JVHSFIJ_fake_script)()
+local function SVKOV_fake_script() -- CF.ChangeColorsInWorkspace 
+	local script = Instance.new('LocalScript', CF)
+
+	local button = script.Parent
+	
+	local function changeColors()
+	    while true do
+	        for _, obj in game.Workspace:GetChildren() do
+	            if obj:IsA("BasePart") then
+	                obj.BrickColor = BrickColor.random()
+	            end
+	        end
+	        task.wait(0.5)
+	    end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+	    changeColors()
+	end)
+	
+	
+end
+coroutine.wrap(SVKOV_fake_script)()
+local function OOMBDHD_fake_script() -- SL.TeleportToNextSpawnPoint 
+	local script = Instance.new('LocalScript', SL)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	local function getLastTouchedSpawnPoint()
+	    -- This function should return the name of the last touched spawn point
+	    -- For the sake of this example, let's assume we have a way to get it
+	    -- This could be stored in a value object or a custom attribute
+	    return player:GetAttribute("LastTouchedSpawnPoint")
+	end
+	
+	local function teleportToSpawnPoint(index)
+	    local spawnPoint = game.Workspace:FindFirstChild(tostring(index))
+	    if spawnPoint then
+	        player.Character:SetPrimaryPartCFrame(spawnPoint.CFrame)
+	    end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+	    local lastTouched = getLastTouchedSpawnPoint()
+	    if lastTouched then
+	        local nextSpawnIndex = tonumber(lastTouched) + 1
+	        teleportToSpawnPoint(nextSpawnIndex)
+	    end
+	end)
+	
+	
+end
+coroutine.wrap(OOMBDHD_fake_script)()
